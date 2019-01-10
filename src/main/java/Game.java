@@ -10,6 +10,9 @@ public class Game {
         this.player1 = player1;
         this.player2 = player2;
         this.startGame();
+        System.out.println();
+        System.out.println(this.player1.getName() + " has " + this.player1.getCard().getRank().toString() + " of " + this.player1.getCard().getSuit().name());
+        System.out.println(this.player2.getName() + " has " + this.player2.getCard().getRank().toString() + " of " + this.player2.getCard().getSuit().name());
         System.out.println(this.declareWinner().getName() + " is the winner");
     }
 
