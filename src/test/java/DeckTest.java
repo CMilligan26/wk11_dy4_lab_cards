@@ -16,9 +16,9 @@ public class DeckTest {
     public void canPopulateDeck(){
         assertEquals(52, deck.getDeckSize());
     }
-//
-//    @Test
-//    public void canDeal(){
-//        assertEquals(2, deck.deal.size());
-//    }
+
+    @Test
+    public void canDeal(){
+        assertEquals(2, deck.deal().size());
+    }
 }
