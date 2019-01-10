@@ -42,9 +42,12 @@ public class Game {
         if (player1Value > player2Value) {
             return player1;
         }
-        else
-        {
+        else if (player1Value < player2Value) {
             return player2;
+        }
+        else {
+            Player playerDraw = new Player("Nobody");
+            return playerDraw;
         }
     }
 }
